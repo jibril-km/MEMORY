@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Memory — Moderne</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main class="app">
+    <header class="top">
+      <h1>🧠 Memory</h1>
+      <p class="sub">Trouve toutes les paires • Timer • Coups • Best</p>
+    </header>
+
+    <section class="hud">
+      <div class="pill">⏱️ Temps : <span id="time">0</span>s</div>
+      <div class="pill">🎯 Coups : <span id="moves">0</span></div>
+      <div class="pill">🏆 Best : <span id="best">—</span></div>
+      <button id="restart" class="btn">🔄 Rejouer</button>
+    </section>
+
+    <section id="grid" class="grid" aria-label="Grille Memory"></section>
+    <div id="toast" class="toast" aria-live="polite"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
